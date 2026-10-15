@@ -1,0 +1,67 @@
+/*
+Author: Weston Matula
+Project: SSP01 - Basic CSS Styling and Webpage Layout
+Colors:
+Background: #f0f0f0
+Header: #333333
+Text: #222222
+Navigation: #006B7D
+Footer: #444444
+Font Family: Arial, sans-serif
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+Header {
+    background-color: #1B2A6B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #006B7D;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #0000EE;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #551A8B;
+}
+
+nav a:active {
+    color: #CC0000;
+}
+
+main {
+    padding: 20px;
+    min-height: 250px;
+}
+
+footer {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
