@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Weston Matula">
+    <meta name ="description" content="CS2623 - Server Side Programming">
+    <meta name ="keywords" content="CS2623, Server Side Programming, PHP, HTML, CSS, OCCC">
+
     <title>CS2623 - Server Side Programming</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -31,7 +36,7 @@
         <h2>PHP Basics</h2>
         <p>This is my first webpage for Server Side Programming.</p>
 
-        <h2>PHP Test Example</h2>
+        <h2>PHP Hello World Test Example</h2>
         <p>
             <?php
                 $message = "Hello, World!";
