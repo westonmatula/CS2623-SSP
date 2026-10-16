@@ -1,9 +1,10 @@
+
 /*
 Author: Weston Matula
 Project: SSP01 - Basic CSS Styling and Webpage Layout
 Colors:
-Background: #f0f0f0
-Header: #333333
+Background: #F5F5F5
+Header: #1B2A6B
 Text: #222222
 Navigation: #006B7D
 Footer: #444444
@@ -16,45 +17,80 @@ Font Family: Arial, sans-serif
     padding: 0;
 }
 
-Header {
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
     background-color: #1B2A6B;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-body {
-    background-color: #F5F5F5;
-    font-family: Arial, sans-serif;
-    color: #222222;
-    margin: 0;
-    padding: 0;
+#page-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
 }
 
 nav {
     background-color: #006B7D;
     padding: 10px;
-    text-align: center;
 }
 
 nav a {
-    color: #0000EE;
+    color: #FFFFFF;
     text-decoration: none;
     margin: 0 8px;
     font-weight: bold;
 }
 
 nav a:visited {
-    color: #551A8B;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 nav a:active {
-    color: #CC0000;
+    color: #E8EEF4;
+}
+
+#left-nav {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+#left-nav ul {
+    list-style: none;
+}
+
+#left-nav li {
+    margin-bottom: 10px;
+}
+
+#left-nav a {
+    display: block;
+    margin: 0;
+    padding: 6px;
 }
 
 main {
+    flex: 1;
+    min-width: 0;
     padding: 20px;
-    min-height: 250px;
+}
+
+#top-nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -62,6 +98,39 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    #page-wrapper {
+        flex-direction: column;
+    }
+
+    #left-nav {
+        width: 100%;
+    }
+
+    #left-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #left-nav li {
+        margin-bottom: 0;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    #top-nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #weekly-planner {
+        width: 100%;
+    }
 }

@@ -1,0 +1,41 @@
+
+/*
+ * CS2623 SSP02 table.css
+ * Author: Weston Matula
+ * Table Header: #1B2A6B (navy blue)
+ * Header Text: #FFFFFF (white)
+ * Even Row Background: #E8EEF4 (light blue-gray)
+ * Odd Row Background: #FFFFFF (white)
+ * Caption: #006B7D (teal)
+ */
+
+#weekly-planner {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 1.5em auto;
+    font-family: Calibri, Tahoma, Arial, sans-serif;
+}
+
+#weekly-planner caption {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #006B7D;
+    margin-bottom: 0.5em;
+}
+
+#weekly-planner th {
+    background-color: #1B2A6B;
+    color: #FFFFFF;
+    padding: 0.6em 1em;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+}
+
+#weekly-planner td {
+    padding: 0.5em 1em;
+    border: 1px solid #CCCCCC;
+}
+
+#weekly-planner tbody tr:nth-child(even) {
+    background-color: #E8EEF4;
+}
