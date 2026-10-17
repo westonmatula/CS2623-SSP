@@ -35,8 +35,9 @@ header {
 
 #page-wrapper {
     display: flex;
-    flex: 1;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 nav {
@@ -65,7 +66,8 @@ nav a:active {
 
 #left-nav {
     width: 180px;
-    flex-shrink: 0;
+
+    flex: 0 0 180px;
 }
 
 #left-nav ul {
@@ -104,21 +106,22 @@ footer {
 
 @media (max-width: 600px) {
     #page-wrapper {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     #left-nav {
-        width: 100%;
+        width: 180px;
+        flex: 0 0 180px;
     }
 
     #left-nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
+        text-align: left;
     }
 
     #left-nav li {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     main {

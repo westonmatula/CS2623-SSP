@@ -1,7 +1,4 @@
-
-<?php
-/* include_header.php - CS2623 SSP02 */
-?>
+<?php /* include_header.php - CS2623 SSP02 */ ?>
 <header>
-    <h1>CS2623 <?php echo htmlspecialchars($_SERVER["SERVER_NAME"] ?? "Server-Side Programming", ENT_QUOTES, "UTF-8"); ?></h1>
+    <h1>CS2623 <?php echo htmlspecialchars(isset($_SERVER["SERVER_NAME"]) ? $_SERVER["SERVER_NAME"] : "Server-Side Programming", ENT_QUOTES, "UTF-8"); ?></h1>
 </header>
