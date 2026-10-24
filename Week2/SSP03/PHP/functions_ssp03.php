@@ -62,3 +62,23 @@ function fn_tableRow(string $day, string $details, string $time): void
     echo '</tr>';
 }
 
+*/
+function fn_dayOfWeek(int $day_number): string
+{
+    if ($day_number === 1) {
+        return 'Monday';
+    } elseif ($day_number === 2) {
+        return 'Tuesday';
+    } elseif ($day_number === 3) {
+        return 'Wednesday';
+    } elseif ($day_number === 4) {
+        return 'Thursday';
+    } elseif ($day_number === 5) {
+        return 'Friday';
+    } elseif ($day_number === 6) {
+        return 'Saturday';
+    } elseif ($day_number === 7) {
+        return 'Sunday';
+    } else {
+        return 'Invalid day number';
+    }
