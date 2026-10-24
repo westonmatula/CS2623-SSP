@@ -18,3 +18,12 @@ function fn_tableOpen(string $caption): void
     echo '<th>Time</th>';
     echo '</tr>';
 }
+
+//**
+* Closes the weekly planner table.
+* @return void
+*/
+function fn_tableClose(): void
+{
+    echo '</table>';
+}
