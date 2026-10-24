@@ -1,3 +1,6 @@
+<?php
+
+/**
 * Opens the weekly planner table and dispays its caption and headings.
 * @param string $caption The title displayed above the table.
 * @return void
@@ -19,7 +22,7 @@ function fn_tableOpen(string $caption): void
     echo '</tr>';
 }
 
-//**
+/**
 * Closes the weekly planner table.
 * @return void
 */
@@ -109,5 +112,25 @@ function fn_dayDetails(int $day_number): string
         default:
             return 'Invalid day number';
     }
+}
 
-    
+/**
+ * Returns the time for a given day.
+ *
+ * @param int $day_number The number of the day (1-7).
+ * @return string The time for the day.
+ */
+function fn_dayTime(int $day_number): string
+{
+    if ($day_number === 1 || $day_number === 2) {
+        return '9:00 AM - 5:00 PM';
+    } elseif ($day_number === 3 || $day_number === 4) {
+        return '10:00 AM - 6:00 PM';
+    } elseif ($day_number === 5) {
+        return '9:00 AM - 4:00 PM';
+    } elseif ($day_number === 6 || $day_number === 7) {
+        return 'Closed';
+    } else {
+        return 'Invalid day number';
+    }
+}
