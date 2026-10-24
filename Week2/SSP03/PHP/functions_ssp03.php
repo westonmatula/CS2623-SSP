@@ -62,6 +62,11 @@ function fn_tableRow(string $day, string $details, string $time): void
     echo '</tr>';
 }
 
+/**
+* Returns the name of the day based on its number.
+*
+* @param int $day_number The number of the day (1-7).
+* @return string The name of the day.
 */
 function fn_dayOfWeek(int $day_number): string
 {
@@ -82,3 +87,27 @@ function fn_dayOfWeek(int $day_number): string
     } else {
         return 'Invalid day number';
     }
+}
+
+function fn_dayDetails(int $day_number): string
+{
+    switch ($day_number) {
+        case 1:
+            return 'Start of the Week';
+        case 2:
+            return 'Second day of the week';
+        case 3:
+            return 'Middle of the week';
+        case 4:
+            return 'Almost the weekend';
+        case 5:
+            return 'End of the work week';
+        case 6:
+            return 'Weekend begins';
+        case 7:
+            return 'Weekend ends';
+        default:
+            return 'Invalid day number';
+    }
+
+    
