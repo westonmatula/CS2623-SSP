@@ -44,3 +44,21 @@ function fn_tableRowCurrent(string $day, string $details, string $time): void
     echo '<td>' . htmlspecialchars($time, ENT_QUOTES, 'UTF-8') . '</td>';
     echo '</tr>';
 }
+
+/** 
+* Displays a regular weekly planner row
+*
+* @param string $day The name of the day to display.
+* @param string $details The details for the day.
+* @param string $time The time for the day.
+* @return void
+*/
+function fn_tableRow(string $day, string $details, string $time): void
+{
+    echo '<tr>';
+    echo '<td>' . htmlspecialchars($day, ENT_QUOTES, 'UTF-8') . '</td>';
+    echo '<td>' . htmlspecialchars($details, ENT_QUOTES, 'UTF-8') . '</td>';
+    echo '<td>' . htmlspecialchars($time, ENT_QUOTES, 'UTF-8') . '</td>';
+    echo '</tr>';
+}
+
