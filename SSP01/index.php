@@ -20,8 +20,9 @@
     <nav>
         <a href="index.php">SSP01</a>
         <a href="../SSP02/SSP02.php">SSP02</a>
-        <a href="#">SSP03</a>
-        <a href="#">SSP04</a>
+        <a href="../Week2/SSP03/index.php">SSP03</a>
+        <a href="../Week2/SSP04/ex1_strings.php">SS04 - String Functions</a>
+        <a href="../Week2/SSP04/ex2_datetime.php">SS04 - Date and Time</a>
         <a href="#">SSP05</a>
         <a href="#">SSP06</a>
         <a href="#">SSP07</a>

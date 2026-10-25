@@ -7,7 +7,7 @@
 */
 function fn_tableOpen(string $caption): void
 {
-    echo '<table border="1" cellpadding="5" cellspacing="0">';
+    echo '<table id="weekly-planner" border="1" cellpadding="5" cellspacing="0">';
 
     echo '<tr style="background-color: #1B2A6B; color: #FFFFFF;">';
     echo '<th colspan="3">';

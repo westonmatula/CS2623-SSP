@@ -1,0 +1,170 @@
+
+/*
+Author: Weston Matula
+Project: SSP01 - Basic CSS Styling and Webpage Layout
+Colors:
+Background: #F5F5F5
+Header: #1B2A6B
+Text: #222222
+Navigation: #006B7D
+Footer: #444444
+Font Family: Arial, sans-serif
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1B2A6B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+nav {
+    background-color: #006B7D;
+    padding: 10px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #E8EEF4;
+}
+
+#left-nav {
+    width: 180px;
+
+    flex: 0 0 180px;
+}
+
+#left-nav ul {
+    list-style: none;
+}
+
+#left-nav li {
+    margin-bottom: 10px;
+}
+
+#left-nav a {
+    display: block;
+    margin: 0;
+    padding: 6px;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+}
+
+#weekly-planner {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 1.5em auto;
+    font-family: Calibri, Tahoma, Arial, sans-serif;
+}
+
+#weekly-planner caption {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #006B7D;
+    margin-bottom: 0.5em;
+}
+
+#weekly-planner th {
+    background-color: #1B2A6B;
+    color: #FFFFFF;
+    padding: 0.6em 1em;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+}
+
+#weekly-planner td {
+    padding: 0.5em 1em;
+    border: 1px solid #CCCCCC;
+}
+
+#weekly-planner tbody tr:nth-child(even) {
+    background-color: #E8EEF4;
+}
+
+#top-nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    #page-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #left-nav {
+        width: 180px;
+        flex: 0 0 180px;
+    }
+
+    #left-nav ul {
+        display: block;
+        text-align: left;
+    }
+
+    #left-nav li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    #top-nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #weekly-planner {
+        width: 100%;
+    }
+}
