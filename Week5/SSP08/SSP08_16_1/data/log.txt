@@ -1,0 +1,2 @@
+2026-11-14 14:25:43 - Test entry from curl
+2026-11-14 14:39:21 - PHP56 compatibility test
